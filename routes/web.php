@@ -1,19 +1,26 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
+// Redirect ke halaman login saat mengakses root URL
 Route::get('/', function () {
     return redirect()->route('login');
 });
 
-// Route untuk halaman login
+// Route untuk menampilkan halaman login (GET)
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 
+// Route untuk memproses login (POST)
+Route::post('/login', [AuthController::class, 'login'])->name('login.post');
+
+// Route untuk menampilkan halaman beranda setelah login
 Route::get('/beranda', function () {
     return view('beranda');
-});
+})->name('beranda');
+
 
 Route::get('/daftar-bahan-baku', function () {
     return view('daftar-bahan-baku');

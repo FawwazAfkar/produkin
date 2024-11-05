@@ -13,8 +13,15 @@
             <div style="padding: 2rem; width: 50%; display: flex; flex-direction: column; justify-content: center;">
                 <h1 style="font-size: 24px; font-weight: bold; text-align: center;">Masuk</h1>
 
+                <!-- Menampilkan Pesan Error Jika Login Gagal -->
+                @if ($errors->any())
+                    <div style="color: #ff4d4d; background-color: #ffe6e6; padding: 0.75rem; border-radius: 4px; margin-bottom: 1rem; text-align: center;">
+                        <strong>{{ $errors->first() }}</strong>
+                    </div>
+                @endif
+
                 <!-- Form Login -->
-                <form method="POST" action="{{ route('login') }}" style="margin-top: 1rem;">
+                <form method="POST" action="{{ route('login.post') }}" style="margin-top: 1rem;">
                     @csrf
                     <div style="margin-bottom: 1rem;">
                         <label for="email">Email</label>
