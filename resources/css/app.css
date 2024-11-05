@@ -38,6 +38,65 @@ body {
     padding: 20px;
 }
 
+.outer-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: max-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.card-actions .btn {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.card-body .filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card-body .filter input[type="text"] {
+    width: 200px;
+}
+
+.card-body table {
+    min-width: 1000px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 .table-container {
     background-color: #f1f1f1;
     padding: 20px;
