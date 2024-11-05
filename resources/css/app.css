@@ -82,7 +82,7 @@ main {
 }
 
 .card-body table {
-    min-width: 1000px;
+    width: max-content;
     border-collapse: collapse;
     background-color: white;
     border-radius: 8px;

@@ -37,6 +37,10 @@ Route::get('/components/produksi/create', function () {
     return view('components.produksi.create');
 })->name('create-produksi');
 
+Route::get('/components/user/create', function () {
+    return view('components.user.create');
+})->name('create-user');
+
 // Route untuk halaman form create bahan baku
 Route::get('/components/bahan-baku/create', function () {
     return view('components.bahan-baku.create');
@@ -46,6 +50,9 @@ Route::get('/components/user/edit', function () {
     return view('components.user.edit');
 })->name('edit-user');
 
+Route::get('/components/bahan-baku/edit', function () {
+    return view('components.bahan-baku.edit');
+})->name('edit-bahan-baku');
 
 // Route untuk halaman reset password
 Route::get('/reset-password', function () {

@@ -10,7 +10,7 @@
                     <h2>Tabel Produksi Terbaru</h2>
                     <div class="card-actions">
                         <button class="btn download">Download Report</button>
-                        <button class="btn add">Tambah Produksi Barang</button>
+                        <button class="btn add">Tambah Produksi</button>
                     </div>
                 </div>
                 
@@ -27,8 +27,8 @@
                         <thead>
                             <tr>
                                 <th>ID Produksi</th>
-                                <th>Tanggal Mulai Produksi</th>
-                                <th>Tanggal Selesai Produksi</th>
+                                <th>Tanggal Mulai</th>
+                                <th>Tanggal Selesai</th>
                                 <th>Status Produksi</th>
                                 <th>Aksi</th>
                             </tr>
@@ -36,8 +36,30 @@
                         <tbody>
                             <tr>
                                 <td>PKK001</td>
-                                <td>17 Agustus 1945</td>
-                                <td>01 September 1945</td>
+                                <td>17-08-2023</td>
+                                <td>29-08-2023</td>
+                                <td><span class="status available">Dalam Proses</span></td>
+                                <td>
+                                    <button class="btn btn-primary"><i class='bx bx-info-circle'></i></button>
+                                    <button class="btn btn-warning"><i class='bx bx-edit'></i></button>
+                                    <button class="btn btn-danger"><i class='bx bx-trash'></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PKK001</td>
+                                <td>17-08-2023</td>
+                                <td>29-08-2023</td>
+                                <td><span class="status available">Dalam Proses</span></td>
+                                <td>
+                                    <button class="btn btn-primary"><i class='bx bx-info-circle'></i></button>
+                                    <button class="btn btn-warning"><i class='bx bx-edit'></i></button>
+                                    <button class="btn btn-danger"><i class='bx bx-trash'></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PKK001</td>
+                                <td>17-08-2023</td>
+                                <td>29-08-2023</td>
                                 <td><span class="status available">Dalam Proses</span></td>
                                 <td>
                                     <button class="btn btn-primary"><i class='bx bx-info-circle'></i></button>
@@ -47,8 +69,8 @@
                             </tr>
                             <tr>
                                 <td>PMM002</td>
-                                <td>29 Juni 2023</td>
-                                <td>30 Juli 2023</td>
+                                <td>10-09-2023</td>
+                                <td>13-09-2024</td>
                                 <td><span class="status in-progress">Selesai</span></td>
                                 <td>
                                     <button class="btn btn-primary"><i class='bx bx-info-circle'></i></button>
