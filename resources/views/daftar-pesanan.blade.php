@@ -1,16 +1,29 @@
 @extends('layouts.app')
 
+
 @section('content')
-    <div class="table-container">
-        <h2>Tabel Daftar Pesanan</h2>
-        <div class="table-controls">
-            <input type="text" placeholder="Cari...">
-            <input type="date" value="2023-01-01">
-            <input type="date" value="2023-01-31">
-            <button>Download Report</button>
-            <button>Tambah Pesanan</button>
-        </div>
-        <table>
+<!-- Main Content -->
+<div class="outer-card">
+    <!-- Card besar untuk seluruh konten dalam main-content -->
+    <div class="card">
+                <div class="card-header">
+                    <h2>Tabel Bahan Baku Terbaru</h2>
+                    <div class="card-actions">
+                        <button class="btn download">Download Report</button>
+                        <button class="btn add">Tambah Bahan Baku</button>
+                    </div>
+                </div>
+                
+                <!-- Bagian Filter -->
+                <div class="card-body">
+                    <div class="filter">
+                        <input type="text" placeholder="Cari...">
+                        <input type="date" value="2023-01-01">
+                        <input type="date" value="2023-01-31">
+                    </div>
+                    
+                    <!-- Tabel Daftar Bahan Baku -->
+                    <table>
             <thead>
                 <tr>
                     <th>ID Pesanan</th>
@@ -69,5 +82,7 @@
                 <!-- Tambahkan baris lain sesuai kebutuhan -->
             </tbody>
         </table>
-    </div>
+                </div>
+            </div>
+        </div>
 @endsection
