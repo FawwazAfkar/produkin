@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/beranda', function () {
+    return view('beranda');
+});
+
 Route::get('/daftar-bahan-baku', function () {
     return view('daftar-bahan-baku');
 });
