@@ -1,8 +1,39 @@
 .sidebar {
-    width: 500px;
-    background-color: #f1f1f1;
+    width: 300px;
+    background: linear-gradient(to bottom, #f1f1f1, transparent);
     padding: 20px;
-    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: calc(100vh - 80px); /* Full height minus navbar height */
+    display: flex;
+    border-radius: 0 20px 0 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a.active, .sidebar nav ul li a:hover {
+    background-color: #ddd;
 }
 
 .logo {
@@ -14,7 +45,7 @@
     max-width: 100px;
 }
 
-.sidebar nav ul {
+/* .sidebar nav ul {
     list-style: none;
 }
 
@@ -35,4 +66,4 @@
     padding: 10px;
     display: block;
     border-radius: 5px;
-}
+} */

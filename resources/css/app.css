@@ -14,13 +14,24 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.layout-container {
+    background-color: #f9f9f9;
 }
 
 .main-content {
     flex-grow: 1;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 300px; /* Offset for the sidebar */
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 80px); /* Full height minus navbar height */
 }
 
 .content {

@@ -1,7 +1,4 @@
 <div class="sidebar">
-    <div class="logo">
-        <img src="path/to/logo.png" alt="Logo">
-    </div>
     <nav>
         <ul>
             <li><a href="#">Beranda</a></li>

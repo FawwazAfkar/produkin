@@ -7,12 +7,10 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
-// Route untuk halaman login
-Route::get('/login', function () {
-    return view('auth.login');
-})->name('login');
+Route::get('/beranda', function () {
+    return view('beranda');
+});
 
-// Route untuk halaman daftar bahan baku
 Route::get('/daftar-bahan-baku', function () {
     return view('daftar-bahan-baku');
 })->name('daftar-bahan-baku');
