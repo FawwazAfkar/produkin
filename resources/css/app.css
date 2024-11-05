@@ -106,3 +106,23 @@ table th, table td {
 .warning {
     color: #f57c00;
 }
+
+.status.processing {
+    background-color: #fff3cd; /* Kuning muda */
+    color: #856404; /* Warna teks yang sesuai */
+}
+
+.status.shipped {
+    background-color: #cce5ff; /* Biru muda */
+    color: #004085; /* Warna teks yang sesuai */
+}
+
+.status.pending {
+    background-color: #f8d7da; /* Merah muda */
+    color: #721c24; /* Warna teks yang sesuai */
+}
+
+.status.completed {
+    background-color: #d4edda; /* Hijau muda */
+    color: #155724; /* Warna teks yang sesuai */
+}
