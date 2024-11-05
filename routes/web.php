@@ -48,3 +48,8 @@ Route::get('/components/user/edit', function () {
 Route::get('/reset-password', function () {
     return view('reset-password');
 })->name('password.reset');
+
+// Route untuk halaman daftar alat
+Route::get('/daftar-alat', function () {
+    return view('daftar-alat');
+})->name('daftar-alat');
