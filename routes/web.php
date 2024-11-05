@@ -30,9 +30,9 @@ Route::get('/daftar-pesanan', function () {
     return view('daftar-pesanan');
 })->name('daftar-pesanan');
 
-Route::get('/components/pesanan/create', function () {
-    return view('components.pesanan.create');
-})->name('create-pesanan');
+Route::get('/components/produksi/create', function () {
+    return view('components.produksi.create');
+})->name('create-produksi');
 
 // Route untuk halaman form create bahan baku
 Route::get('/components/bahan-baku/create', function () {
