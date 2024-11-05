@@ -1,27 +1,26 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="dashboard-container">    
+@section('content')  
     <!-- Statistics Cards -->
     <div class="stats-container">
         <div class="stat-card">
-            <p class="stat-number">10</p>
-            <p class="stat-label">Total Produksi Hari Ini</p>
+            <span class="stat-number">10</span>
+            <span class="stat-label">Total Produksi Hari Ini</span>
             <button class="detail-button">Klik Detail</button>
         </div>
         <div class="stat-card">
-            <p class="stat-number">10</p>
-            <p class="stat-label">Stok Bahan Baku Tersedia</p>
+            <span class="stat-number">10</span>
+            <span class="stat-label">Stok Bahan Baku Tersedia</span>
             <button class="detail-button">Klik Detail</button>
         </div>
         <div class="stat-card">
-            <p class="stat-number">10</p>
-            <p class="stat-label">Pesanan dalam Proses</p>
+            <span class="stat-number">10</span>
+            <span class="stat-label">Pesanan dalam Proses</span>
             <button class="detail-button">Klik Detail</button>
         </div>
         <div class="stat-card">
-            <p class="stat-number">10</p>
-            <p class="stat-label">Produk Siap Dikirim</p>
+            <span class="stat-number">10</span>
+            <span class="stat-label">Produk Siap Dikirim</span>
             <button class="detail-button">Klik Detail</button>
         </div>
     </div>
@@ -74,60 +73,53 @@
             </tbody>
         </table>
     </div>
-</div>
+
 @endsection
 
 <style>
-/* Container Styling */
-.dashboard-container {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-/* Dashboard Title */
-.dashboard-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 /* Statistics Section */
 .stats-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    display: flex; /* Use flexbox for row layout */
+    justify-content: space-between; /* Space between cards */
     margin-bottom: 20px;
 }
 
 .stat-card {
-    width: 180px;
-    background-color: #fff;
-    padding: 20px;
+    flex: 0 0 calc(25% - 10px); /* 4 cards per row, minus margin */
+    background-color: #d0d0d0;
     text-align: center;
-    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+    height: 150px; /* Set height to 150px */
+    display: flex; /* Flexbox for card contents */
+    flex-direction: column; /* Column layout */
+    justify-content: space-between; /* Space contents evenly */
 }
 
 .stat-number {
-    font-size: 2rem;
+    margin-top: 20px;
+    font-size: 2rem; /* Adjusted font size for better fit */
     font-weight: bold;
-    color: #333;
 }
 
 .stat-label {
-    font-size: 1rem;
-    color: #666;
+    font-size: 0.9rem; /* Adjusted font size for better fit */
+    margin-bottom: 10px; /* Reduced margin below the label */
 }
 
 .detail-button {
-    background-color: #e0e0e0;
+    background-color: #999;
     border: none;
-    padding: 5px 10px;
-    margin-top: 10px;
+    width: 100%;
+    padding: 8px 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0px 0px 8px 8px;
     font-size: 0.9rem;
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.detail-button:hover {
+    background-color: #666; /* Darker gray on hover */
 }
 
 /* Charts Section */

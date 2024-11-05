@@ -1,4 +1,6 @@
 /* Other Css */
+
+/* semua file css import disini */
 @import url(./sidebar.css);
 @import url(./navbar.css);
 @import url(./footer.css);
@@ -14,6 +16,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.layout-container {
+    background-color: #f9f9f9;
 }
 
 .main-content {

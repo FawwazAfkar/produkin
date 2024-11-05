@@ -17,9 +17,24 @@
                 <span class="user-name">Nama Lengkap</span>
                 <span class="user-email">email@example.com</span>
             </li>
-            <li><a class="dropdown-item" href="#">Kelola User</a></li>
-            <li><a class="dropdown-item" href="#">Ubah Password</a></li>
-            <li><a class="dropdown-item" href="#">Keluar</a></li>
+            <hr class="dropdown-divider">
+            <li>
+                <a class="dropdown-item" href="#">
+                    <i class='bx bxs-user'></i> Kelola User
+                </a>
+            </li>
+            <hr class="dropdown-divider">
+            <li>
+                <a class="dropdown-item" href="#">
+                    <i class="bx bx-lock-alt"></i> Ubah Password
+                </a>
+            </li>
+            <hr class="dropdown-divider">
+            <li>
+                <a class="dropdown-item" href="#">
+                    <i class="bx bx-log-out"></i> Keluar
+                </a>
+            </li>
         </ul>
     </div>
 </div>

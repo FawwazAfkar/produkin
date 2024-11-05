@@ -17,3 +17,7 @@ Route::get('/daftar-bahan-baku', function () {
 Route::get('/components/bahan-baku/create', function () {
     return view('create');
 });
+
+Route::get('/reset-password', function () {
+    return view('reset-password');
+});

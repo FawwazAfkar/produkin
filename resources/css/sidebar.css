@@ -1,12 +1,13 @@
 .sidebar {
     width: 300px;
-    background-color: #f1f1f1;
+    background: linear-gradient(to bottom, #f1f1f1, transparent);
     padding: 20px;
     position: fixed;
     top: 80px;
     left: 0;
     height: calc(100vh - 80px); /* Full height minus navbar height */
     display: flex;
+    border-radius: 0 20px 0 0;
     flex-direction: column;
     align-items: center;
 }
