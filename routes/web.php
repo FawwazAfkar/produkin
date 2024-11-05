@@ -36,7 +36,7 @@ Route::get('/components/pesanan/create', function () {
 
 // Route untuk halaman form create bahan baku
 Route::get('/components/bahan-baku/create', function () {
-    return view('create');
+    return view('components.bahan-baku.create');
 })->name('create-bahan-baku');
 
 Route::get('/components/user/edit', function () {

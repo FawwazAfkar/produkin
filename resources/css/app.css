@@ -9,35 +9,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f5f5f5;
 }
 
-.layout-container {
-    background-color: #f9f9f9;
+main {
+    display: flex;
+    flex: 1;
 }
 
 .main-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 80px;
-    margin-left: 300px; /* Offset for the sidebar */
-    padding: 20px;
-    background-color: #f9f9f9;
-    min-height: calc(100vh - 80px); /* Full height minus navbar height */
+    flex: 1;
+    padding: 30px;
+    padding-bottom: 0;
 }
-
-.content {
-    padding: 20px;
-}
-
 .outer-card {
     background-color: #ffffff;
     padding: 20px;
@@ -47,13 +38,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .card {
     background-color: #f1f1f1;
     padding: 40px;
     border-radius: 8px;
-    max-width: max-content;
+    width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
     align-items: center;
@@ -97,48 +89,28 @@ body {
     overflow: hidden;
 }
 
-.table-container {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.table-container h2 {
-    margin-bottom: 15px;
-}
-
-.table-controls {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.table-controls input[type="text"],
-.table-controls input[type="date"] {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.table-controls button {
-    padding: 8px 12px;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
 table th, table td {
-    padding: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
     text-align: left;
-    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #C4C4C4;
+}
+
+.status.available {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.status.in-progress {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 
 .status {
@@ -184,4 +156,49 @@ table th, table td {
 .status.completed {
     background-color: #d4edda; /* Hijau muda */
     color: #155724; /* Warna teks yang sesuai */
+}
+
+/* CSS halaman Create */
+
+.card-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f7f9fc;
+}
+
+.form-group input[disabled] {
+    background-color: #d3d7dc;
+}
+
+.btn.kirim {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn.kirim:hover {
+    background-color: #333;
 }

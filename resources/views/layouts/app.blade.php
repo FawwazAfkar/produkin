@@ -21,21 +21,13 @@
 </head>
 
 <body>
-    <!-- Navbar (Full-width) -->
     <x-navbar />
-
-    <!-- Layout Container -->
-    <div class="layout-container">
-        <!-- Sidebar (Fixed on the left) -->
+    <main>
         <x-sidebar />
-
-        <!-- Main Content -->
-        <main class="main-content">
+        <section class="main-content">
             @yield('content')
-        </main>
-    </div>
-
-    <!-- Footer -->
+        </section>
+    </main>
     <x-footer />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
