@@ -21,10 +21,13 @@ Route::get('/beranda', function () {
     return view('beranda');
 })->name('beranda');
 
-
 Route::get('/daftar-bahan-baku', function () {
     return view('daftar-bahan-baku');
 })->name('daftar-bahan-baku');
+
+Route::get('/daftar-produksi', function () {
+    return view('daftar-produksi');
+})->name('daftar-produksi');
 
 Route::get('/daftar-pesanan', function () {
     return view('daftar-pesanan');
