@@ -37,6 +37,10 @@ Route::get('/components/produksi/create', function () {
     return view('components.produksi.create');
 })->name('create-produksi');
 
+Route::get('/components/produksi/edit', function () {
+    return view('components.produksi.edit');
+})->name('edit-produksi');
+
 Route::get('/components/user/create', function () {
     return view('components.user.create');
 })->name('create-user');
