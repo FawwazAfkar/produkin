@@ -2,10 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Redirect halaman utama ke halaman login
 Route::get('/', function () {
     return redirect()->route('login');
 });
+
+// Route untuk halaman login
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
 
 Route::get('/beranda', function () {
     return view('beranda');
