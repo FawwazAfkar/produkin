@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PasswordResetController;
 
 // Redirect ke halaman login saat mengakses root URL
 Route::get('/', function () {
@@ -58,10 +59,15 @@ Route::get('/components/bahan-baku/edit', function () {
     return view('components.bahan-baku.edit');
 })->name('edit-bahan-baku');
 
-// Route untuk halaman reset password
-Route::get('/reset-password', function () {
-    return view('reset-password');
-})->name('password.reset');
+
+// Route untuk memproses reset password
+Route::get('reset-password', [PasswordResetController::class, 'showResetForm'])->name('password.reset');
+Route::post('reset-password', [PasswordResetController::class, 'reset'])->name('password.update');
+
+//route daftar produk jadi
+Route::get('/daftar-produk-jadi', function () {
+    return view('daftar-produk-jadi');
+})->name('daftar-produk-jadi');
 
 // Route untuk halaman daftar alat
 Route::get('/daftar-alat', function () {

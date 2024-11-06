@@ -1,6 +1,6 @@
 <div class="navbar">
     <div class="logo">
-        <img src="path/to/logo.png" alt="Logo">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo">
     </div>
     <h1>ERP FOR PRODUCTION</h1>
     <div class="user-profile dropdown">
@@ -25,7 +25,7 @@
             </li>
             <hr class="dropdown-divider">
             <li>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="{{ route('password.reset') }}">
                     <i class="bx bx-lock-alt"></i> Ubah Password
                 </a>
             </li>
