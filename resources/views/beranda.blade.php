@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')  
+<div class="home">
     <!-- Statistics Cards -->
     <div class="stats-container">
         <div class="stat-card">
@@ -73,6 +74,7 @@
             </tbody>
         </table>
     </div>
+</div>
 
 @endsection
 

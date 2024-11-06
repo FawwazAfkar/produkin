@@ -28,13 +28,21 @@
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+
 
 .sidebar li:hover {
     background-color: #e0e0e0;
 }
 
-.sidebar .active {
+.sidebar li.active {
     background-color: #dcdcdc;
     color: #333;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
